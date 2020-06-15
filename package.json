@@ -17,7 +17,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "redo": "^0.1.2"
+    "redo": "^0.1.2",
+    "rero": "^1.0.0-8"
   },
   "repository": {
     "type": "git",
