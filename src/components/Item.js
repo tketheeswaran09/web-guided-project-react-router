@@ -1,6 +1,6 @@
 import React from 'react'
 // We'll need quite a few imports from react-router-dom
-import { useRouteMatch, useHistory, useParams, NavLink, Route } from 'react-router-dom'
+import { useRouteMatch, useParams, NavLink, Route } from 'react-router-dom'
 
 import ItemDetails from './ItemDetails'
 
