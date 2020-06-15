@@ -35,20 +35,20 @@ export default function App(props) {
 
       {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
       {/* with a switch, the first route that matches is rendered only */}
-      {/* <Switch> */}
+      <Switch>
         {/* With Route, if URL in Chrome matches the "path" prop we gave the Route, then, Home renders */}
-        <Route path="/">
-          <Home />
+        <Route path="/items-list/:itemId">
+          <Item />
         </Route>
 
         <Route path="/items-list">
           <ItemsList items={[]} />
         </Route>
 
-        <Route path="/items-list/:itemId">
-          <Item />
+        <Route path="/">
+          <Home />
         </Route>
-      {/* </Switch> */}
+      </Switch>
     </div>
   )
 }
