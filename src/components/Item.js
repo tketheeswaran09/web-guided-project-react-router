@@ -19,7 +19,13 @@ export default function Item(props) {
   // Beware! The ids are integers, whereas URL parameters are strings.
   // Beware! The JSX is expecting 'item' to exist instantly!
   // we use this hook to grab they dynamic parts of the path (:itemID).
-  const item = {}
+
+  const item = items.find(i => {
+    // match loosely because the id is a number, and the itemId from URL is a string
+    return i.id == itemId
+  })
+
+  if (!item) return 'Looking for your item...'
 
   return (
     <div className='item-wrapper'>
