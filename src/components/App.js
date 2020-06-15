@@ -38,7 +38,7 @@ export default function App(props) {
       <Switch>
         {/* With Route, if URL in Chrome matches the "path" prop we gave the Route, then, the nested renders */}
         <Route path="/items-list/:itemId">
-          <Item />
+          <Item items={stock} />
         </Route>
 
         <Route path="/items-list">
