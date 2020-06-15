@@ -6,6 +6,7 @@ export default function ItemsList(props) {
   const { items } = props
 
   // url tells us where we are at (the current path in the URL bar in Chrome)
+  // path tells us the "path template" that is currently matching the path in Chrome
   const { url, path } = useRouteMatch()
 
   console.log('url from the hook', url)
