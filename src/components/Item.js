@@ -1,6 +1,6 @@
 import React from 'react'
 // We'll need quite a few imports from react-router-dom
-import { useRouteMatch, useHistory, NavLink, Route } from 'react-router-dom'
+import { useRouteMatch, useHistory, useParams, NavLink, Route } from 'react-router-dom'
 
 import ItemDetails from './ItemDetails'
 
@@ -9,9 +9,11 @@ export default function Item(props) {
   const { items } = props
 
   const { url, path } = useRouteMatch()
+  const params = useParams()
 
-  console.log('url from the hook', url)
-  console.log('path from the hook', path)
+  console.log('url from the route match hook', url)
+  console.log('path from the route match hook', path)
+  console.log('params from the params hook', params)
 
   // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:itemID)
   // Beware! The ids are integers, whereas URL parameters are strings.
