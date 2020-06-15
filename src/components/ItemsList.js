@@ -5,6 +5,7 @@ import { Link, useRouteMatch } from 'react-router-dom'
 export default function ItemsList(props) {
   const { items } = props
 
+  // url tells us where we are at (the current path in the URL bar in Chrome)
   const { url } = useRouteMatch()
 
   // We'll grab the current URL using the hook
