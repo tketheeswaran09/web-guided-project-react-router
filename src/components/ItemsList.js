@@ -7,12 +7,11 @@ export default function ItemsList(props) {
 
   // url tells us where we are at (the current path in the URL bar in Chrome)
   // path tells us the "path template" that is currently matching the path in Chrome
+  // We'll grab the current URL using the hook
   const { url, path } = useRouteMatch()
 
   console.log('url from the hook', url)
   console.log('path from the hook', path)
-
-  // We'll grab the current URL using the hook
 
   return (
     <div className='items-list-wrapper'>
