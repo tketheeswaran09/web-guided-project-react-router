@@ -25,17 +25,17 @@ export default function Item(props) {
     return i.id == itemId
   })
 
-  // if (!item) return 'Looking for your item...'
+  if (!item) return 'Looking for your item...'
 
   return (
     <div className='item-wrapper'>
       <div className='item-header'>
         <div className='image-wrapper'>
-          <img src={item?.imageUrl} alt={item?.name} />
+          <img src={item.imageUrl} alt={item.name} />
         </div>
         <div className='item-title-wrapper'>
-          <h2>{item?.name}</h2>
-          <h4>${item?.price}</h4>
+          <h2>{item.name}</h2>
+          <h4>${item.price}</h4>
         </div>
       </div>
 
