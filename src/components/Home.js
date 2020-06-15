@@ -11,7 +11,8 @@ export default function Home() {
     // with code
     // history.pushState(null, null, '/') // we cannot do it like this
 
-    // now we can do logic, for example check 'auth' status
+    // this is an example of "imperative" code
+    // versus simply dropping a <Link /> in the JSX which would be "declarative"
     if (true) { // authed
       history.push('/items-list')
     } else {
