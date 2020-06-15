@@ -8,8 +8,8 @@ export default function ItemsList(props) {
   // url tells us where we are at (the current path in the URL bar in Chrome)
   const { url, path } = useRouteMatch()
 
-  console('url from the hook', url)
-  console('path from the hook', path)
+  console.log('url from the hook', url)
+  console.log('path from the hook', path)
 
   // We'll grab the current URL using the hook
 
